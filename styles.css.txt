@@ -1,0 +1,79 @@
+body {
+  font-family: Georgia;
+  color: rgb(0,70,190);
+  padding: 0 50px;
+  background-color: rgba(255,230,250,0.8);
+  background-image: url("https://wallpapers.com/images/featured/sparkle-2tv4sw5oa1l80r96.jpg");
+  background-blend-mode: lighten;
+}
+
+form {
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+fieldset {
+  background-color: rgba(250,250,250,0.7);
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  float: left;
+}
+
+/*This stops the first radio button and first checkbox from appearing on the same line as the legend*/
+fieldset > *:not(legend) {
+  clear: left;
+}
+
+h1, p {
+  text-align: center;
+  color: rgb(0,50,120);
+}
+
+p {
+  font-style: italic;
+}
+
+label {
+  display: block;
+  padding: 3px;
+}
+
+::placeholder {
+  color: rgb(150,180,255);
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  color: rgb(0,70,190);
+  min-height: 1.2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: inline;
+  width: unset;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  background-color: rgba(250,250,250,0.7);
+  width: 40%;
+  margin: 1em auto;
+  border: 2px solid white;
+  color: rgb(0,50,120);
+  font-size: 1rem;
+  height: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(250,250,250,0.85);
+}
+
+footer {
+  font-size: 0.8rem;
+}

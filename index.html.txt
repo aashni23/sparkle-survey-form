@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sparkle Survey</title>
+</header>
+<body>
+  <h1 id="title">Sparkle Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve our sparkliness</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required name="name"/></label>
+      <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required name="email"/></label>
+      <label for="number" id="number-label">Age (optional) <input type="number" id="number" min="13" max="120" placeholder="Age" name="age"/></label>
+      <label for="dropdown">Which option best describes your current level of sparkle?
+        <select id="dropdown" name="current-role">
+          <option value="">Select sparkle level</option>
+          <option value="1">Pink Sparkle</option>
+          <option value="2">Blue Sparkle</option>
+          <option value="3">Orange Sparkle</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend being sparkly to a friend?</legend>
+      <label for="definitely"><input type="radio" name="recommend" id="definitely" value="definitely" />Definitely</label>
+      <label for="maybe"><input type="radio" name="recommend" id="maybe" value="maybe" />Maybe</label>
+      <label for="unsure"><input type="radio" name="recommend" id="unsure" value="unsure" />Not sure</label>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <label for="glitter"><input type="checkbox" id="glitter" name="improve" value="glitter" /> Glitter</label>
+      <label for="fireworks"><input type="checkbox" id="fireworks" name="improve" value="fireworks" /> Fireworks</label>
+      <label for="sunshine"><input type="checkbox" id="sunshine" name="improve" value="sunshine" /> Sunshine</label>
+      <label for="disco"><input type="checkbox" id="disco" name="improve" value="disco" /> Disco balls</label>
+      <label for="other"><input type="checkbox" id="other" name="improve" value="other" /> Other</label>
+    </fieldset>
+    <label for="extra-info">Tell us about your favourite sparkly things! <textarea id="extra-info" placeholder="My most sparkly thing is..." rows="5" cols="40"></textarea></label>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+<footer>
+  <p>Reminder: All levels of sparkliness are amazing</p>
+</footer>
